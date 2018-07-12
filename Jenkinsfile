@@ -88,6 +88,6 @@ node('master') {
         currentBuild.result = "FAILED"
         throw e
     } finally {
-        slack(currentBuild.result, "${SLACK_CHANNEL}")
+       // slack(currentBuild.result, "${SLACK_CHANNEL}")
     }
 } //node
